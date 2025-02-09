@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        :root{
+            --color: rgb(82, 82, 198);
+            --seccolor: rgb(160, 160, 203);
+            --thirdcolor: rgb(203, 199, 169);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: var(--seccolor);
+        }
+        nav{
+            background-color: var(--color);
+            padding: 12px 0;
+            position: sticky;
+            top: 0px;
+        }
+        ul {
+            text-align: center;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+
+        .container1, .container2 {
+            background-color: var(--thirdcolor);
+            padding: 80px;
+            border: solid brown;
+            height: 450px;
+            width: 250px; 
+        }
+        
+        .container3{
+            background-color: rgb(154, 113, 192);
+            padding: 50px;
+            margin: 20px;
+            border: solid rgb(102, 74, 74);
+            height: 300px;
+            width: 550px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .image{
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; 
+            position: fixed ;
+            left: 70vw;
+            bottom: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="container1"></div>
+        <div class="container2"></div>
+    </div>
+    <br>
+    <hr>
+    <div class="container3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempore ut, quas voluptatibus ducimus placeat ab necessitatibus ullam nam voluptates minus at doloremque nisi eius cumque quisquam tenetur eaque labore quasi quo qui possimus. Vitae totam corrupti, optio, quibusdam ipsa illo molestias aliquam esse ullam placeat numquam voluptatem quod distinctio necessitatibus veritatis accusamus harum modi quidem maxime aut. Odit amet ullam, blanditiis magni atque neque incidunt! Itaque sed dolor magni dignissimos rem!</p>
+    </div>
+    <img src="Image/pandas.jpg" class="image">
+</body>
+<footer>
+    <h4>Contact</h4>
+    <p>Email: support@example.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>© 2025 Your Website Name. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,77 @@
+<!-- Design The Card - "card.png" is a file which contains a card image. Write HTML and CSS code to design this card. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deign the Card</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .container {
+            height: 440px;
+            width: 340px;
+            border: 2px solid rgba(26, 25, 25, 0.007);
+            position: relative;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(248, 248, 248, 0.973);
+        }
+        
+        .card {
+            height: 400px;
+            width: 300px;
+            border: 2px solid rgb(86, 73, 73);
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+        .image_resize{
+            height: 200px;
+            width: 99%;
+            display: block;
+            margin: 0% auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .edit{
+            text-align: center;
+            font-weight: bold;
+            margin-left: 50px;
+            padding:10px 20px;
+            color:rgb(59, 86, 190)
+        }
+        p{
+            color:rgb(60, 53, 8)
+        }
+        h2{
+            color: rgb(97, 46, 46);
+        }
+        button{
+            background-color: rgb(138, 138, 194);
+            border-radius: 10px;
+            position: absolute;
+            left: 35%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <img src="Image/travelling-solo-featured.webp" class="image_resize">
+        <span class="edit">
+            Nature
+        </span>
+        <span class="edit">
+            Lake
+        </span>
+        <h2>Lago di braies</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, nulla eveniet et quae veritatis officia unde. Harum ipsam nostrum repellendus!</p>
+        <button>Read More</button>
+</div>    
+</body>
+</html>
